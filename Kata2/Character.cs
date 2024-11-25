@@ -4,11 +4,23 @@ public class Character
 {
     private string _name;
     private int _health;
+
+    private Combat combat = new();
     
     public Character(string name, int health)
     {
         _name = name;
         _health = health;
+    }
+
+    public string Name
+    {
+        get { return _name; }
+    }
+
+    public int Health
+    {
+        get { return _health; }
     }
 
     public delegate void CharacterAction(Character target, int amount);
@@ -19,17 +31,10 @@ public class Character
     
     public void Attack(Character target, int amount)
     {
-        HealthChanged += OnHealthChange;
-        
         Console.WriteLine($"{_name} attacks {target._name} for {amount} damage");
 
         target._health -= amount;
         
-        OnHealthChange(target);
-    }
-    
-    public void OnHealthChange(Character target)
-    {
-        Console.WriteLine($"[Event] {target._name}'s health changed to {target._health}.");
+        combat.OnHealthChange(target);
     }
 }

@@ -2,24 +2,23 @@ namespace Kata1;
 
 public class GameLoop
 {
-    public void Loop(List<Character> characterList)
+    public void Loop(List<Character> characterList, Character healer)
     {
-        foreach (var characters in characterList)
+        var orderedList = characterList.OrderBy(character => character.Health);
+        
+        foreach (var characters in orderedList)
         {
-            if (characters.Health <= 50)
-            {
-                Console.WriteLine($"{characters.Name} has {characters.Health}hp");
-                characters.PrimaryAction();
-            }
+            Console.WriteLine($"{characters.Name} has {characters.Health}hp");
+            characters.PrimaryAction();
         }
         
-        foreach (var characters in characterList)
+        Console.WriteLine();
+
+        Console.WriteLine("healer will heal the warrior with the least amount of hp first");
+        foreach (var character in orderedList)
         {
-            if (characters.Health > 50)
-            {
-                Console.WriteLine($"{characters.Name} has {characters.Health}hp");
-                characters.PrimaryAction();
-            }
+            Console.WriteLine($"{healer.Name} healed {character.Name}.{character.Name} has {character.Health} hp");
+            healer.PrimaryAction();
         }
     }
 }

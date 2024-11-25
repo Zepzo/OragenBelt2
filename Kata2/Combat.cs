@@ -4,13 +4,21 @@ public class Combat
 {
     public void Game()
     {
-        var Red = new Character("Red", 100);
-        var Blue = new Character("Blue", 120);
+        var red = new Character("Red", 100);
+        var blue = new Character("Blue", 120);
 
-        Character.CharacterAction redAttack = Red.Attack;
-        Character.CharacterAction blueAttack = Blue.Attack;
+        Character.CharacterAction redAttack = red.Attack;
+        Character.CharacterAction blueAttack = blue.Attack;
+        
+        red.HealthChanged += OnHealthChange;
+        blue.HealthChanged += OnHealthChange;
 
-        redAttack(Blue, 10);
-        blueAttack(Red, 8);
+        redAttack(blue, 10);
+        blueAttack(red, 8);
+    }
+    
+    public void OnHealthChange(Character target)
+    {
+        Console.WriteLine($"[Event] {target.Name}'s health changed to {target.Health}.");
     }
 }
