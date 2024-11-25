@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamdaExercise", "LamdaExercise\LamdaExercise.csproj", "{170ADCAB-C225-4E6E-A4E6-05BDE3A3EB9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata1", "Kata1\Kata1.csproj", "{8F55577B-A9C4-407B-9C6A-BB242875E5F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata2", "Kata2\Kata2.csproj", "{3665AFEA-6C99-4572-BF31-E06C2D51FA53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata3", "Kata3\Kata3.csproj", "{7FBC8279-ED68-4618-991F-5190A0D7BAC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{170ADCAB-C225-4E6E-A4E6-05BDE3A3EB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170ADCAB-C225-4E6E-A4E6-05BDE3A3EB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170ADCAB-C225-4E6E-A4E6-05BDE3A3EB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170ADCAB-C225-4E6E-A4E6-05BDE3A3EB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F55577B-A9C4-407B-9C6A-BB242875E5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F55577B-A9C4-407B-9C6A-BB242875E5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F55577B-A9C4-407B-9C6A-BB242875E5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F55577B-A9C4-407B-9C6A-BB242875E5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3665AFEA-6C99-4572-BF31-E06C2D51FA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3665AFEA-6C99-4572-BF31-E06C2D51FA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3665AFEA-6C99-4572-BF31-E06C2D51FA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3665AFEA-6C99-4572-BF31-E06C2D51FA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FBC8279-ED68-4618-991F-5190A0D7BAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FBC8279-ED68-4618-991F-5190A0D7BAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FBC8279-ED68-4618-991F-5190A0D7BAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FBC8279-ED68-4618-991F-5190A0D7BAC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
