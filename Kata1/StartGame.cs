@@ -6,8 +6,8 @@ public class StartGame
     {
         var warrior0 = new Character("Warrior", 30, () => Console.WriteLine($"Attacking"));
         var warrior1 = new Character("Warrior", 60, () => Console.WriteLine($"Attacking"));
-        var warrior2 = new Character("Warrior", 60, () => Console.WriteLine($"Attacking"));
-        var warrior3 = new Character("Warrior", 80, () => Console.WriteLine($"Attacking"));
+        var warrior2 = new Character("Warrior", 80, () => Console.WriteLine($"Attacking"));
+        var warrior3 = new Character("Warrior", 60, () => Console.WriteLine($"Attacking"));
         var warrior4 = new Character("Warrior", 30, () => Console.WriteLine($"Attacking"));
 
         var healer = new Character("Healer", 10, () => Console.WriteLine($"Healing"));
