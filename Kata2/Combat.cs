@@ -16,9 +16,15 @@ public class Combat
         redAttack(blue, 10);
         blueAttack(red, 8);
     }
-    
-    public void OnHealthChange(Character target)
+
+    private void OnHealthChange(Character obj)
     {
+        throw new NotImplementedException();
+    }
+
+    public void OnHealthChange(Character target, string name, int amount)
+    {
+        Console.WriteLine($"{name} attacks {target.Name} for {amount} damage");
         Console.WriteLine($"[Event] {target.Name}'s health changed to {target.Health}.");
     }
 }

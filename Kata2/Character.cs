@@ -31,10 +31,8 @@ public class Character
     
     public void Attack(Character target, int amount)
     {
-        Console.WriteLine($"{_name} attacks {target._name} for {amount} damage");
-
         target._health -= amount;
         
-        combat.OnHealthChange(target);
+        combat.OnHealthChange(target, _name, amount);
     }
 }
